@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monitoreo de Ganancia en Iglesia</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🔊 Monitor de Ganancia - Iglesia</h1>
+  </header>
+
+  <main>
+    <div id="container" class="sources"></div>
+
+    <section class="alertas">
+      <h2>⚠ Alertas de Ganancia</h2>
+      <ul id="alerts"></ul>
+    </section>
+
+    <section class="grafico">
+      <h2>📊 Historial de Ganancia Promedio</h2>
+      <div class="chart-wrapper">
+        <canvas id="gainChart"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto de Monitoreo de Audio en Iglesias &copy; 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

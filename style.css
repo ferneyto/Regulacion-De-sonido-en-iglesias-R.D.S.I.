@@ -1,0 +1,122 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.sources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 20px;
+}
+
+.source {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1em;
+  width: 240px;
+  animation: fadeIn 0.7s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.source label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.bar-container {
+  background: #eee;
+  border-radius: 8px;
+  width: 100%;
+  height: 18px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.value {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+button.silence-btn {
+  padding: 6px 10px;
+  border: none;
+  background-color: #2980b9;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.silence-btn:hover {
+  background-color: #1f6394;
+}
+
+.alertas {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff5f5;
+  border: 1px solid #f99;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.alertas h2 {
+  margin-top: 0;
+}
+
+.alertas ul {
+  padding-left: 20px;
+}
+
+.chart-wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  background: #ecf0f1;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
